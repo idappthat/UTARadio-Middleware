@@ -1,0 +1,23 @@
+{
+  "name": "uta-radio",
+  "version": "1.0.0",
+  "description": "Api/Middleware for UTA Radio",
+  "main": "app.js",
+  "dependencies": {
+    "bluebird": "^3.3.4",
+    "body-parser": "^1.15.0",
+    "cookie-parser": "^1.4.1",
+    "express": "^4.13.4",
+    "express-validator": "^2.20.3",
+    "multer": "^1.1.0",
+    "request-promise": "^2.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js",
+    "release": "NODE_ENV=production node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mobi",
+  "license": "ISC"
+}
