@@ -3,6 +3,8 @@ var spotify = require('./spotify.js');
 
 var app = express();
 
+var port = process.env.PORT || 3000;
+
 app.get("/", function(req, res) {
    res.send('Made by mobi for UTA radio.');
 });
@@ -31,9 +33,6 @@ app.get("/artistImage", function(req, res) {
       res.send(result);
     });
 });
-
-var port = 8000;
-if(process.env.NODE_ENV == 'production') port = 80;
 
 var server = app.listen(port, function () {
 
